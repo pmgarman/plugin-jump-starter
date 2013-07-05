@@ -37,5 +37,5 @@ if( !class_exists( '{plugin_jump_starter_license}' ) ) {
 	global ${class_name};
 	${class_name} = new {class_name}( __FILE__ );
 
-	load_plugin_textdomain( '{clean_class_name}', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	load_plugin_textdomain( '{plugin_jump_starter_textdomain}', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
