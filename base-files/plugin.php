@@ -13,6 +13,13 @@
 
 /**
  * Copyright 2013  {plugin_jump_starter_author}  (email: {plugin_jump_starter_author_email})
+ *
+ * Credit: Settings API from mattyza & pmgarman
+ * https://twitter.com/mattyza
+ * https://twitter.com/pmgarman
+ *
+ * Built using the Plugin Jump Starter!
+ * https://github.com/pmgarman/plugin-jump-starter
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2, as

@@ -1,4 +1,14 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+/**
+ * {plugin_jump_starter_name} Plugin class
+ *
+ * @package WordPress
+ * @subpackage {class_name}
+ * @author {plugin_jump_starter_author}
+ * @since 1.0.0
+ */
 class {class_name} {
 
 	/**
@@ -6,7 +16,7 @@ class {class_name} {
 	 * 
 	 * @param string $file
 	 */
-	function __construct( $file ) {
+	public function __construct( $file ) {
 		$this->name = '{plugin_jump_starter_name}';
 		$this->token = '{clean_class_name}';
 
@@ -18,7 +28,7 @@ class {class_name} {
 	 * 
 	 * @return void
 	 */
-	function init() {
+	public function init() {
 		$tabs = array(
 			'{clean_class_name}' => '{class_name}_Settings'
 		);

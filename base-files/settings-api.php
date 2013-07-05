@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * @package WordPress
  * @subpackage {class_name}_Settings_API
  * @category Settings
- * @author DesignWriteBuild
+ * @author {plugin_jump_starter_author}
  * @since 1.0.0
  */
 class {class_name}_Settings_API {
@@ -222,7 +222,6 @@ class {class_name}_Settings_API {
 	 * @return void
 	 */
 	public function settings_errors() {
-		echo $this->token; // DEBUG
 		echo settings_errors( $this->token . '-errors' );
 	} // End settings_errors()
 	
