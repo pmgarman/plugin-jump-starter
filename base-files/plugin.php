@@ -35,7 +35,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-if( !class_exists( '{plugin_jump_starter_license}' ) ) {
+if( !class_exists( '{class_name}' ) ) {
 	require 'classes/class-{clean_class_name}-settings-api.php';
 	require 'classes/class-{clean_class_name}-settings-screen.php';
 	require 'classes/class-{clean_class_name}-settings.php';

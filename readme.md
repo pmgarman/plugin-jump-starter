@@ -14,6 +14,9 @@ Would love to see a pull request ;)
 
 ## Changelog
 
+### [1.0.2](https://github.com/pmgarman/plugin-jump-starter/tree/v1.0.2)
+- Fix: Wrong placeholder for main plugin file `class_exists()` check.
+
 ### [1.0.1](https://github.com/pmgarman/plugin-jump-starter/tree/v1.0.1)
 - Fix: Header comments
 - Update: Added comments to created plugin crediting for settings API & jump start
