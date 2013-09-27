@@ -27,7 +27,8 @@ class {class_name}_Settings_Screen {
 			'menu_title' => ${class_name}->name,
 			'capability' => 'manage_options',
 			'menu_slug' => ${class_name}->token,
-			'default_tab' => isset( ${class_name}->default_tab ) ? ${class_name}->default_tab : ''
+			'default_tab' => isset( ${class_name}->default_tab ) ? ${class_name}->default_tab : '',
+			'screen_icon' => 'options-general'
 		);
 		$this->args = wp_parse_args( $args, $defaults );
 		add_action( 'admin_menu', array( $this, 'register_settings_screen' ) );
@@ -57,7 +58,7 @@ class {class_name}_Settings_Screen {
 		$current_tab = $this->get_current_tab();
 ?>
 <div id="<?php echo ${class_name}->token; ?>" class="wrap">
-	<?php screen_icon(); ?>
+	<?php screen_icon( $this->args['screen_icon'] ); ?>
 	<h2 class="nav-tab-wrapper">
 	<?php
 		echo $this->get_settings_tabs_html( $tabs, $current_tab );

@@ -3,12 +3,12 @@
  * Plugin Name: Plugin Jump Starter
  * Plugin URI: https://github.com/pmgarman/plugin-jump-starter
  * Description: Jump start plugin development with a set of base files.
- * Version: 1.0.2
+ * Version: 1.1.0
  * Author: Patrick Garman
  * Author URI: http://pmgarman.me
  * Text Domain: plugin-jump-starter
  * Domain Path: /languages/
- * License: GPLv2
+ * License: GPLv3
  */
 
 /**
