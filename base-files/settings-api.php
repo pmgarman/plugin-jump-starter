@@ -249,7 +249,7 @@ class {class_name}_Settings_API {
 		$options = $this->get_settings();
 		echo '<input id="' . esc_attr( $args['key'] ) . '" name="' . $this->token . '[' . esc_attr( $args['key'] ) . ']" size="40" type="text" value="' . esc_attr( $options[$args['key']] ) . '" />' . "\n";
 		if ( isset( $args['data']['description'] ) ) {
-			echo '<span class="description">' . esc_html( $args['data']['description'] ) . '</span>' . "\n";
+			echo '<span class="description">' . $args['data']['description'] . '</span>' . "\n";
 		}
 	} // End form_field_text()
 	
@@ -271,7 +271,7 @@ class {class_name}_Settings_API {
 		}
 		echo '<input id="' . $args['key'] . '" name="' . $this->token . '[' . esc_attr( $args['key'] ) . ']" type="checkbox" value="1"' . checked( esc_attr( $options[$args['key']] ), '1', false ) . ' />' . "\n";
 		if ( $has_description ) {
-			echo esc_html( $args['data']['description'] ) . '</label>' . "\n";
+			echo $args['data']['description'] . '</label>' . "\n";
 		}
 	} // End form_field_text()
 	
@@ -288,7 +288,7 @@ class {class_name}_Settings_API {
 
 		echo '<textarea id="' . esc_attr( $args['key'] ) . '" name="' . $this->token . '[' . esc_attr( $args['key'] ) . ']" cols="42" rows="5">' . esc_html( $options[$args['key']] ) . '</textarea>' . "\n";
 		if ( isset( $args['data']['description'] ) ) {
-			echo '<p><span class="description">' . esc_html( $args['data']['description'] ) . '</span></p>' . "\n";
+			echo '<p><span class="description">' . $args['data']['description'] . '</span></p>' . "\n";
 		}
 	} // End form_field_textarea()
 	
@@ -313,7 +313,7 @@ class {class_name}_Settings_API {
 			echo $html;
 			
 			if ( isset( $args['data']['description'] ) ) {
-				echo '<p><span class="description">' . esc_html( $args['data']['description'] ) . '</span></p>' . "\n";
+				echo '<p><span class="description">' . $args['data']['description'] . '</span></p>' . "\n";
 			}
 		}
 	} // End form_field_select()
@@ -337,7 +337,7 @@ class {class_name}_Settings_API {
 			echo $html;
 			
 			if ( isset( $args['data']['description'] ) ) {
-				echo '<span class="description">' . esc_html( $args['data']['description'] ) . '</span>' . "\n";
+				echo '<span class="description">' . $args['data']['description'] . '</span>' . "\n";
 			}
 		}
 	} // End form_field_radio()
@@ -365,7 +365,7 @@ class {class_name}_Settings_API {
 			echo $html;
 			
 			if ( isset( $args['data']['description'] ) ) {
-				echo '<span class="description">' . esc_html( $args['data']['description'] ) . '</span>' . "\n";
+				echo '<span class="description">' . $args['data']['description'] . '</span>' . "\n";
 			}
 		}
 	} // End form_field_multicheck()
@@ -391,7 +391,7 @@ class {class_name}_Settings_API {
 			echo $html;
 			
 			if ( isset( $args['data']['description'] ) ) {
-				echo '<p><span class="description">' . esc_html( $args['data']['description'] ) . '</span></p>' . "\n";
+				echo '<p><span class="description">' . $args['data']['description'] . '</span></p>' . "\n";
 			}
 		}
 	} // End form_field_range()
@@ -415,7 +415,7 @@ class {class_name}_Settings_API {
 			echo $html;
 			
 			if ( isset( $args['data']['description'] ) ) {
-				echo '<span class="description">' . esc_html( $args['data']['description'] ) . '</span>' . "\n";
+				echo '<span class="description">' . $args['data']['description'] . '</span>' . "\n";
 			}
 		}
 	} // End form_field_images()
